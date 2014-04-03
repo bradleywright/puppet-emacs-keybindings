@@ -6,9 +6,9 @@
 #
 # Examples
 #
-#   include emacs-keybindings
+#   include emacs_keybindings
 
-class emacs-keybindings {
+class emacs_keybindings {
 
   $home = "/Users/${::luser}"
   $keybindings_directory = "${home}/Library/KeyBindings"
@@ -18,7 +18,7 @@ class emacs-keybindings {
   }
 
   file { "${keybindings_directory}/DefaultKeyBinding.dict":
-    source  => 'puppet:///modules/emacs-keybindings/EmacsKeyBindings.dict',
+    source  => 'puppet:///modules/emacs_keybindings/EmacsKeyBindings.dict',
     require => File["${keybindings_directory}"]
   }
 }

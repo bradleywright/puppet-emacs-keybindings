@@ -6,7 +6,7 @@ Installs Emacs-like keybindings for OSX. Based on
 ## Usage
 
 ```puppet
-include emacs-keybindings
+include emacs_keybindings
 ```
 
 ## Required Puppet Modules
